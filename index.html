@@ -1,0 +1,125 @@
+<!-- Author : Rupesh Kumar Mund -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App | CodesOnBytes By-Rupesh</title>
+
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/Responsive.css">
+
+    <link rel="shortcut icon" href="/Cloud_img.avif" type="image/x-icon">
+
+</head>
+<body>
+
+    <main>
+
+        <div class="container">
+            <!-- Navbar -->
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="/Cloud_img.avif" alt="Cloud_Image" class="pic">
+                    <label>Weather App</label>
+                </div>
+
+                <div>
+                    <ul class="navlist">
+                        <li><a href="#" class="active">Home</a></li>
+                        <li><a href="#search_Bar">Weather Forecast</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <button class="login">Log In</button>
+                </div>
+
+                
+
+            </nav>
+
+            <!-- Search Location for Weather -->
+            <div id="search_Bar">
+                <input type="text" name="Search" class="space" placeholder="e.g. London, New York, Canada, Delhi" id="city">
+                <button class="search" id="submit">Search</button>
+            </div>
+
+            <!-- Card to display weather information -->
+            <div class="box_info">
+                <h1 class="location">Weather for <span id="cityName"></span></h1>
+
+                <div class="main_card">
+
+
+                    <!-- Temperature Information Card -->
+                    <div class="temperature">
+                        <section class="content_text">
+                            <h2>Temperature</h2>
+                            <p class="para1">Temperature is <span id="temp"></span>℃</p>
+                            <p>Minimum temperature is <span id="min_temp"></span></p>
+                            <p>Maximum temperature is <span id="max_temp"></span></p>
+                            
+                        </section>
+    
+                    </div>
+    
+                    <!-- Wind Information Card -->
+                    <div class="wind">
+                        <section class="content_text">
+                            <h2>Wind</h2>
+                            <p class="para1">Wind speed is <span id="wind_speed"></span>KM/HR</p>
+                            <p>Wind degree is <span id="wind_degrees"></span></p>
+                            <p>Cloud PCT is <span id="cloud_pct"></span></p>
+                            
+                        </section>
+    
+                    </div>
+    
+                    <!-- Humidity Information Card -->
+                    <div class="humidity">
+                        <section class="content_text">
+                            <h2>Humidity</h2>
+                            <p>Humidity is <span id="humidity"></span>%</p>
+                            <p class="para1">Feels like <span id="feels_like"></span>℃</p>
+                            <p>Sunrise Time is <span id="sunrise"></span></p>
+                            <p>Sunset Time is <span id="sunset"></span></p>
+                            
+                        </section>
+    
+                    </div>
+    
+    
+                </div>
+
+
+            </div>
+        </div>
+        
+        
+        <section id="contact">
+
+            <div class="form">
+                <h2 class="text-position">Contact Us</h2>
+                <input type="text" name="name" placeholder="Enter your name" id="name" class="form-input">
+                <input type="number" name="number" placeholder="Enter your phone" id="phone" class="form-input">
+                <input type="email" name="email" placeholder="Enter your email" id="email" class="form-input">
+                <textarea name="text" id="text" cols="30" rows="10" placeholder="Describe your problem...." class="form-input"></textarea>
+                <button class="btn btn-dark">Submit</button>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p id="copyright">Copyright &copy; CodesOnBytes 2023, All Rights Reserved</p>
+        <span>Developed by - Rupesh Kumar Mund</span>
+    </footer>
+    
+    <script src="/JavaScript/script.js"></script>
+    
+</body>
+</html>

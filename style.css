@@ -1,0 +1,256 @@
+/* Author : Rupesh Kumar Mund  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+.navbar {
+    width: 100%;
+    height: 60px;
+    background-color: #496786;
+    box-shadow: 3px 3px 6px rgb(128, 128, 128);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.logo {
+    font-size: 30px;
+    line-height: 65px;
+    color: white;
+    padding: 0 100px;
+    font-weight: bold;
+}
+.navbar ul {
+    float: right;
+}
+.navlist li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 8px;
+    line-height: 65px;
+    text-transform: uppercase;
+    margin-right: 30px;
+    
+}
+.navlist a {
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    text-align: center;
+}
+
+a:hover {
+    border: solid rgb(196, 59, 182) 1px;
+    border-radius: 6px;
+    padding: 4px;
+    transition: 0.6s;
+    color: rgb(158, 77, 208);
+}
+a.active {
+    border: solid white 1px;
+    border-radius: 6px;
+    padding: 4px;
+    transition: 0.6s;
+}
+.space {
+    padding: 24px;
+    text-transform: uppercase;
+}
+.box_info {
+    width: 90%;
+    height: 60vh;
+    background-color: rgb(195, 221, 244);
+    border: solid rgb(0, 85, 85) 2px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 18px grey;
+    margin-left: 75px;
+}
+.main_card {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 30px 0;
+}
+.main_card .content_text {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.content_text h2 {
+    color: white;
+    padding-top: 8px;
+    border-radius: 16px 16px 0 0;
+    background-color: rgb(7, 131, 172);
+}
+.content_text span {
+    font-weight: bold;
+    font-size: 28px;
+}
+.content_text .para1 {
+    padding-top: 10px;
+    text-align: center;
+}
+.main_card .content_text p {
+    font-weight: bold;
+    font-size: 20px;
+    padding: 14px;
+}
+.humidity .content_text p {
+    font-weight: bold;
+    font-size: 17px;
+    padding: 8px;
+}
+
+.box_info .main_card .temperature {
+    width: 320px;
+    height: 260px;
+    border: solid white 1px;
+    background-color: rgb(108, 162, 239);
+    border-radius: 16px;
+    box-shadow: 2px 2px 4px 2px rgb(162, 162, 162);
+}
+.box_info .main_card .wind {
+    width: 320px;
+    height: 260px;
+    border: solid white 1px;
+    background-color: rgb(108, 162, 239);
+    border-radius: 16px;
+    box-shadow: 2px 2px 4px 2px rgb(162, 162, 162);
+}
+.box_info .main_card .humidity {
+    width: 320px;
+    height: 260px;
+    border: solid white 1px;
+    background-color: rgb(108, 162, 239);
+    border-radius: 16px;
+    box-shadow: 2px 2px 4px 2px rgb(162, 162, 162);
+}
+.box_info .location {
+    text-align: center;
+    margin-top: 22px;
+}
+
+footer {
+    width: 100%;
+    height: 48px;
+    padding: 10px 0 0 0;
+    text-align: center;
+    background-color: #162738;
+}
+#copyright {
+    color: rgb(167, 166, 166);
+    font-size: 16px;
+    text-align: center;
+}
+.search {
+    width: 100px;
+    height: 35px;
+    border: none;
+    background-color: rgb(64, 183, 206);
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 680;
+    color: white;
+}
+#search_Bar {
+    margin-top: 75px;
+    margin-left: 600px;
+    margin-bottom: 22px;
+}
+#city {
+    width: 350px;
+    height: 42px;
+    background-color: white;
+    border-radius: 6px;
+    border: solid rgb(198, 196, 196) 0.1px;
+    box-shadow: inset 3px 3px solid grey;
+}
+.login {
+    width: 100px;
+    height: 35px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 680;
+    color: gold;
+    margin-right: 15px;
+    margin-bottom: 5px;
+}
+.login:hover {
+    width: 100px;
+    height: 35px;
+    border: none;
+    background-color: gold;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 680;
+    color: white;
+    margin-right: 15px;
+    margin-bottom: 5px;
+}
+.text-position {
+    text-align: center;
+    font-size: 32px;
+    padding: 30px auto;
+    font-family: 'ubuntu', sans-serif;
+}
+.navbar .logo .pic {
+    width: 27px;
+    height: 27px;
+    border-radius: 6px;
+    margin-top: 12px;
+}
+#contact {
+    background-color: rgb(250, 246, 240);
+    height: 650px;
+}
+.contact h2 {
+    font-size: 32px;
+    padding: 30px auto;
+
+}
+.text-position {
+    font-family: 'ubuntu', sans-serif;
+    padding: 30px;
+    font-size: 34px;
+}
+.form {
+    max-width: 450px;
+    margin: 42px auto;
+}
+.form-input {
+    width: 100%;
+    padding: 5px 3px;
+    margin: 15px;
+    font-size: 19px;
+    border: solid grey 1.5px;
+    border-radius: 8px;
+    box-shadow: 4px 4px 6px rgb(168, 168, 168);
+}
+.btn {
+    padding: 7px 20px;
+    margin: 7px 20px;
+    border: solid black 2px;
+    border-radius: 6px;
+    color: black;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: grey;
+    color: white;
+    border-radius: solid white 2px;
+    border-radius: 6px;
+}
+footer span {
+    font-size: 10px;
+    color: rgba(90, 91, 91, 0.6);
+    margin-bottom: 2px;
+    margin-right: 4px;
+}
+
+
