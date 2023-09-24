@@ -34,4 +34,26 @@ submit.addEventListener("click", (e)=> {
 })
 
 getWeather("Bhawanipatna")
+
+function validateform() {
+    let f_name = document.myform.name.value;
+    let number = document.myform.number.value;
+    let email = document.myform.email.value;
+    let atposition = email.indexOf("@");
+    let dotposition = email.indexOf(".");
+
+    if (f_name == null || f_name == " " || f_name.length<4) {
+        alert("Name is required\nEnter full name which must be of 4 character ");
+        return false;
+    }
+    else if (number == null || number.length < 10) {
+        alert("Enter valid number");
+        return false;
+    }
+    else if (atposition < 2 || dotposition < atposition + 6 || email == null) {
+        alert("Email is required\nPlease enter valid email");
+        return false;
+    }
+}
+
     
