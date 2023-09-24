@@ -101,11 +101,15 @@
 
             <div class="form">
                 <h2 class="text-position">Contact Us</h2>
-                <input type="text" name="name" placeholder="Enter your name" id="name" class="form-input">
-                <input type="number" name="number" placeholder="Enter your phone" id="phone" class="form-input">
-                <input type="email" name="email" placeholder="Enter your email" id="email" class="form-input">
-                <textarea name="text" id="text" cols="30" rows="10" placeholder="Describe your problem...." class="form-input"></textarea>
-                <button class="btn btn-dark">Submit</button>
+
+                <form action="#" method="post" name="myform" onsubmit=" return validateform();">
+                    <input type="text" name="name" placeholder="Enter your name" id="name" class="form-input">
+                    <input type="number" name="number" placeholder="Enter your phone" id="phone" class="form-input">
+                    <input type="email" name="email" placeholder="Enter your email" id="email" class="form-input">
+                    <textarea name="text" id="text" cols="30" rows="10" placeholder="Describe your problem...." class="form-input"></textarea>
+                    <button class="btn btn-dark" type="submit">Submit</button>
+                </form>
+                
             </div>
 
         </section>
