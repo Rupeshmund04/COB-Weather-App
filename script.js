@@ -47,7 +47,7 @@ function validateform() {
         return false;
     }
     else if (number == null || number.length < 10) {
-        alert("Enter valid number");
+        alert("Enter valid Phone Number");
         return false;
     }
     else if (atposition < 2 || dotposition < atposition + 6 || email == null) {
