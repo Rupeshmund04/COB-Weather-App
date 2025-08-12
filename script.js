@@ -5,6 +5,15 @@ const options = {
         'X-RapidAPI-Host': 'weather-by-api-ninjas.p.rapidapi.com'
     }
 };
+// Not to be used.
+// const url = 'https://weather-api167.p.rapidapi.com/api/weather/forecast?place=London%2CGB&cnt=3&units=standard&type=three_hour&mode=json&lang=en';
+// const options = {
+// 	method: 'GET',
+// 	headers: {
+// 		'x-rapidapi-host': 'weather-api167.p.rapidapi.com',
+// 		Accept: 'application/json'
+// 	}
+// };
 const getWeather = (city)=>{
     cityName.innerHTML = city
     
@@ -57,3 +66,4 @@ function validateform() {
 }
 
     
+
