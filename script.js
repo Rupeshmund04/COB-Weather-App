@@ -48,8 +48,11 @@ const getWeather = (city) => {
         sunset.innerHTML = sunsetDate.toLocaleTimeString();
         
     })
-    .catch(err => console.error(err));
-}
+    .catch(err => {
+     console.error(err));
+     alert("Something went wrong while fetching weather data.");
+    });
+});
 
 submit.addEventListener("click", (e)=> {
     e.preventDefault()
@@ -80,6 +83,7 @@ function validateform() {
 }
 
     
+
 
 
 
