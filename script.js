@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoader", () => {
+document.addEventListener("DOMContentLoaded", () => {
 const cityName = document.getElementById('cityName');
 const cloud_pct = document.getElementById('cloud_pct');
 const temp = document.getElementById('temp');
@@ -85,6 +85,7 @@ function validateform() {
 });
 
     
+
 
 
 
