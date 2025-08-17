@@ -10,7 +10,7 @@ const wind_degrees = document.getElementById('wind_degrees');
 const sunrise = document.getElementById('sunrise');
 const sunset = document.getElementById('sunset');
 const weather_desc = document.getElementById('weather_desc'); 
-const submit = document.getElementById('submit');
+const submit = document.getElementById('submit-btn');
 const city = document.getElementById('city');
 
 
@@ -76,6 +76,7 @@ function validateform() {
 }
 
     
+
 
 
 
