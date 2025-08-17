@@ -86,6 +86,9 @@ a.active {
     border-radius: 16px 16px 0 0;
     background-color: rgb(7, 131, 172);
 }
+#button {
+    cursor: pointer;
+}
 .content_text span {
     font-weight: bold;
     font-size: 28px;
@@ -256,6 +259,7 @@ footer span {
     margin-bottom: 2px;
     margin-right: 4px;
 }
+
 
 
 
