@@ -25,7 +25,11 @@ const getWeather = (city) => {
     fetch('https://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=7271b6627c1dc186e7cdcaa739be3c15&units=metric')
     .then(response => response.json())
     .then((response) => {
-
+        if (response.cod === "404") {
+            alert("City not found. Please enter another city name");
+            return;
+        }
+        
         console.log(response)
         cloud_pct.innerHTML = response.clouds.all;
         temp.innerHTML = response.main.temp;
@@ -76,6 +80,7 @@ function validateform() {
 }
 
     
+
 
 
 
