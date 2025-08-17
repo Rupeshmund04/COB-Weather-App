@@ -9,7 +9,7 @@ const wind_speed = document.getElementById('wind_speed');
 const wind_degrees = document.getElementById('wind_degrees');
 const sunrise = document.getElementById('sunrise');
 const sunset = document.getElementById('sunset');
-// const weather_desc = document.getElementById('weather_desc'); // Optional
+const weather_desc = document.getElementById('weather_desc'); 
 const submit = document.getElementById('submit');
 const city = document.getElementById('city');
 
@@ -36,7 +36,7 @@ const getWeather = (city) => {
         wind_speed.innerHTML = response.wind.speed;
         wind_degrees.innerHTML = response.wind.deg;
 
-        // weather_desc.innerHTML = response.weather[0].description;
+        weather_desc.innerHTML = response.weather[0].description;
         
         const sunriseDate = new Date(response.sys.sunrise * 1000);
         sunrise.innerHTML = sunriseDate.toLocaleTimeString();
@@ -76,6 +76,7 @@ function validateform() {
 }
 
     
+
 
 
 
