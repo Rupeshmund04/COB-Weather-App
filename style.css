@@ -86,7 +86,7 @@ a.active {
     border-radius: 16px 16px 0 0;
     background-color: rgb(7, 131, 172);
 }
-#submit {
+#submit-btn {
     cursor: pointer;
 }
 .content_text span {
@@ -259,6 +259,7 @@ footer span {
     margin-bottom: 2px;
     margin-right: 4px;
 }
+
 
 
 
