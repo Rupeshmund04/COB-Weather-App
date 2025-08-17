@@ -1,37 +1,32 @@
-const options = {
-    method: 'GET',
-    headers: {
-        'X-RapidAPI-Key': 'b45e96323fmshf5e4bc50d3b8a90p1e091djsnfb21cde4eb87',
-        'X-RapidAPI-Host': 'weather-by-api-ninjas.p.rapidapi.com'
-    }
-};
-// Not to be used.
-// const url = 'https://weather-api167.p.rapidapi.com/api/weather/forecast?place=London%2CGB&cnt=3&units=standard&type=three_hour&mode=json&lang=en';
-// const options = {
-// 	method: 'GET',
-// 	headers: {
-// 		'x-rapidapi-host': 'weather-api167.p.rapidapi.com',
-// 		Accept: 'application/json'
-// 	}
-// };
-const getWeather = (city)=>{
+
+const apiKey = "7271b6627c1dc186e7cdcaa739be3c15";
+
+// const api key : 7271b6627c1dc186e7cdcaa739be3c15;
+// new api url : https://api.openweathermap.org/data/2.5/weather?q=bangalore&appid=7271b6627c1dc186e7cdcaa739be3c15&units=metric;
+ 
+const getWeather = (city) => {
     cityName.innerHTML = city
     
-    fetch('https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=' + city, options)
+    fetch('https://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=7271b6627c1dc186e7cdcaa739be3c15&units=metric')
     .then(response => response.json())
     .then((response) => {
 
         console.log(response)
-        cloud_pct.innerHTML = response.cloud_pct
-        temp.innerHTML = response.temp
-        feels_like.innerHTML = response.feels_like
-        humidity.innerHTML = response.humidity
-        min_temp.innerHTML = response.min_temp
-        max_temp.innerHTML = response.max_temp
-        wind_speed.innerHTML = response.wind_speed
-        wind_degrees.innerHTML = response.wind_degrees
-        sunrise.innerHTML = response.sunrise
-        sunset.innerHTML = response.sunset
+        cloud_pct.innerHTML = response.clouds.all;
+        temp.innerHTML = response.main.temp;
+        feels_like.innerHTML = response.main.feels_like;
+        humidity.innerHTML = response.main.humidity;
+        min_temp.innerHTML = response.main.temp_min;
+        max_temp.innerHTML = response.main.temp_max;
+        wind_speed.innerHTML = response.wind.speed;
+        wind_degrees.innerHTML = response.wind.deg;
+
+        weather_desc.innerHTML = response.weather[0].description;
+        
+        const sunriseDate = new Date(response.sys.sunrise * 1000);
+        sunrise.innerHTML = sunriseDate.toLocaleTimeString();
+        const sunsetDate = new Date(response.sys.sunset * 1000);
+        sunset.innerHTML = sunsetDate.toLocaleTimeString();
         
     })
     .catch(err => console.error(err));
@@ -66,4 +61,5 @@ function validateform() {
 }
 
     
+
 
